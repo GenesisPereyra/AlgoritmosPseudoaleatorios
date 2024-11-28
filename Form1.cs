@@ -21,45 +21,45 @@ namespace GeneradorPseudoAleatorio
                 return;
             }
 
+            int a = 2;
+            int m = 5;
+            int semilla = 15;
             int cantidad = 10;
 
-            List<double> secuencia = new List<double>();
-            GeneradorCongruencialMultiplicativo simulacion = new GeneradorCongruencialMultiplicativo();
+            List<FilaTabla> secuencia = new List<FilaTabla>();
+            GeneradorCongruencialMultiplicativo simulacion = new GeneradorCongruencialMultiplicativo(a, m, semilla);
             secuencia = simulacion.ObtenerSecuencia(cantidad);
 
-            textBox7.Text = secuencia[1].ToString(); // Media
-            textBox6.Text = secuencia[0].ToString(); // Varianza
-            textBox8.Text = secuencia[2].ToString();
-            textBox9.Text = secuencia[2].ToString();// Desviación estándar (agregar textBox8 en el diseño)
-
-            // Obtener la listaParcial de PanelSolar
-            List<PanelSolar> listaParcial = simulacion.ListaPaneles;  // Asegúrate de que la lista de Paneles sea accesible
+            textBox7.Text = secuencia[3].ToString(); // Media
+            textBox6.Text = secuencia[2].ToString(); // Varianza
+            textBox8.Text = secuencia[1].ToString();
+            textBox9.Text = secuencia[0].ToString();// Desviación estándar (agregar textBox8 en el diseño)
 
             // Imprimir los valores de listaParcial en textBox9
 
-            foreach (var panel in listaParcial)
+            foreach (var panel in secuencia)
             {
                 // Aquí puedes mostrar las propiedades del PanelSolar (por ejemplo, IdPanel, IdExperimento, VidaUtil)
                 textBox9.AppendText($"{panel.N:F2}, {Environment.NewLine}");
             }
         }
 
-        private void textBox7_TextChanged(object sender, EventArgs e)
+        private void TextBox7_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox8_TextChanged(object sender, EventArgs e)
+        private void TextBox8_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void Label8_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void Label6_Click(object sender, EventArgs e)
         {
 
         }
@@ -69,17 +69,17 @@ namespace GeneradorPseudoAleatorio
 
         }
 
-        private void textBox9_TextChanged(object sender, EventArgs e)
+        private void TextBox9_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void Label9_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
+        private void TextBox6_TextChanged(object sender, EventArgs e)
         {
 
         }

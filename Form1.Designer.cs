@@ -46,7 +46,7 @@
             label6.Size = new Size(90, 15);
             label6.TabIndex = 14;
             label6.Text = "[a*X(n)] mod m";
-            label6.Click += label6_Click;
+            label6.Click += Label6_Click;
             // 
             // textBox6
             // 
@@ -54,7 +54,7 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(100, 23);
             textBox6.TabIndex = 12;
-            textBox6.TextChanged += textBox6_TextChanged;
+            textBox6.TextChanged += TextBox6_TextChanged;
             // 
             // label7
             // 
@@ -71,7 +71,7 @@
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(100, 23);
             textBox7.TabIndex = 11;
-            textBox7.TextChanged += textBox7_TextChanged;
+            textBox7.TextChanged += TextBox7_TextChanged;
             // 
             // label8
             // 
@@ -81,7 +81,7 @@
             label8.Size = new Size(33, 15);
             label8.TabIndex = 16;
             label8.Text = "X(n)}";
-            label8.Click += label8_Click;
+            label8.Click += Label8_Click;
             // 
             // textBox8
             // 
@@ -89,7 +89,7 @@
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(100, 23);
             textBox8.TabIndex = 15;
-            textBox8.TextChanged += textBox8_TextChanged;
+            textBox8.TextChanged += TextBox8_TextChanged;
             // 
             // label9
             // 
@@ -99,7 +99,7 @@
             label9.Size = new Size(14, 15);
             label9.TabIndex = 17;
             label9.Text = "n";
-            label9.Click += label9_Click;
+            label9.Click += Label9_Click;
             // 
             // textBox9
             // 
@@ -107,7 +107,7 @@
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(100, 23);
             textBox9.TabIndex = 18;
-            textBox9.TextChanged += textBox9_TextChanged;
+            textBox9.TextChanged += TextBox9_TextChanged;
             // 
             // Form1
             // 
